@@ -1,0 +1,13 @@
+[
+    { "id": 1, "name": "Phát triển Web" },
+    { "id": 2, "name": "Javascript" },
+    { "id": 3, "name": "React" },
+    { "id": 4, "name": "Node.js" },
+    { "id": 5, "name": "Python" },
+    { "id": 6, "name": "Khoa học Dữ liệu" },
+    { "id": 7, "name": "Thiết kế UI/UX" },
+    { "id": 8, "name": "Java" },
+    { "id": 9, "name": "Cơ bản lập trình" },
+    { "id": 10, "name": "Machine Learning" }
+  ]
+  

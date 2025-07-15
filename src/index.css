@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --light-gray: #f3f3f3;
+  --orange: #df6033;
+  --medium-gray: #8a7d78;
+  --dark-gray: #282220;
+  --padding-x: 3rem;
+  --font-size: 1rem;
+}
+
+
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  /* cursor: url("./assets/cursorWeb.png"), auto; */
+}
+
+::selection {
+  background-color: var(--orange);
+  color: var(--light-gray);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--medium-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-gray);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--medium-gray);
+  opacity: 0.2;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  height: 0.5rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid var(--orange);
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.dot.active {
+  background-color: var(--orange);
+  transition: background-color 1s ease;
+}
+
+.dot:hover {
+  background-color: var(--orange);
+}
