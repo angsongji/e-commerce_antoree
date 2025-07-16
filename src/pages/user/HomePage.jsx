@@ -16,7 +16,7 @@ function HomePage() {
   const [courses, setCourses] = useState([]);
   const [categories, setCategories] = useState([]);
   const navigate = useNavigate();
-  
+  const [loading, setLoading]  = useState(true);
   const { scrollToTop } = useScrollToTop();
   useEffect(() => {
     scrollToTop();
@@ -24,13 +24,19 @@ function HomePage() {
 
   useEffect(() => {
     const fetchInitialData = async () => {
-      // setLoading(true);
+      setLoading(true);
       try {
         const [coursesData, categoriesData] = await Promise.all([fetchCourses(), fetchCategories()]);
         setCourses(coursesData.data);
         setCategories(categoriesData.data);
       } catch (error) {
         console.error("Lỗi khi tải course", error);
+      }finally{
+        const handleAction = async () => {
+          await new Promise(resolve => setTimeout(resolve, 1000)); //delay 1s để load skeleton giả
+          setLoading(false);
+        };
+        handleAction();
       }
     };
 
@@ -39,22 +45,22 @@ function HomePage() {
 
   return <>
     {
-      courses.length > 0 && categories.length > 0 ? <div className="w-full bg-white">
+      !loading ? <div className="w-full bg-white">
         <div className="w-full h-[70vh] ">
           <HeroSlider />
         </div>
-
+        <div id="well-rated">
         <SectionWellRated courses={courses} isShorten={true} />
-        <div className="bg-[var(--light-gray)]">
+        </div>
+        
+        <div id="all-courses" className="bg-[var(--light-gray)]">
         <SectionAllCourses courses={courses} categories={categories} category={categories[0].id} isShorten={true} />
 
         </div>
         
         <SectionForYou courses={courses} isShorten={true} />
-
-      </div> : <div className="w-full h-screen flex items-center justify-center">
-        <p className="text-2xl font-bold text-[var(--orange)]">Đang tải...</p>
-      </div>
+        
+      </div> : <div className="bg-white w-full min-h-[50vh] flex items-center justify-center"><span className="loader"></span></div>
     }
   </>
 }

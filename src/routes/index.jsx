@@ -15,6 +15,7 @@ const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 const HistoriesPage = lazy(() => import("../pages/user/HistoriesPage"));
 const WellRatedPage = lazy(() => import("../pages/user/WellRatedPage"));
 const ForYouPage = lazy(() => import("../pages/user/ForYouPage"));
+const SuggestPage = lazy(() => import("../pages/user/SuggestPage"));
 import AllCoursesPage from "../pages/user/AllCoursesPage";
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
         path: PATH.ALL_COURSES,
         element: <AllCoursesPage />,
       },
+      {
+        path: PATH.SUGGEST_COURSES,
+        element: <SuggestPage />,
+      }
     ],
   },
 ]);

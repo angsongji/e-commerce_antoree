@@ -1,3 +1,4 @@
+import { Modal, message } from 'antd';
 import SectionHeader from "../../components/SectionHeader";
 import CourseCartCard from "../../components/CourseCartCard";
 import { useState, useEffect } from "react";
@@ -35,13 +36,34 @@ function CartPage() {
               fetchCoursesCall();
           }, []);
     const removeFromCartAction = (courseId) => {
-        removeFromCart(courseId);
-        setResults(results.filter(r => r.id !== courseId));
-        // navigate("/cart");
+        
+        Modal.confirm({
+            title: 'Xác nhận?',
+            content: 'Bạn chắc chắn muốn xóa khóa học này khỏi giỏ hàng',
+            okText: 'Đồng ý',
+            cancelText: 'Quay về',
+            okType: 'danger',
+            onOk() {
+                removeFromCart(courseId);
+               setResults(results.filter(r => r.id !== courseId));
+                message.success('Đã xóa khóa học khỏi giỏ hàng!', 2);
+            },
+          });
     }
     const removeAllCartAction = () => {
-        clearCart();
-        setResults([]);
+        Modal.confirm({
+            title: 'Xác nhận?',
+            content: 'Bạn chắc chắn muốn xóa tất cả trong giỏ hàng',
+            okText: 'Đồng ý',
+            cancelText: 'Quay về',
+            okType: 'danger',
+            onOk() {
+                clearCart();
+                setResults([]);
+                message.success('Đã xóa tất cả khỏi giỏ hàng!', 2);
+            },
+          });
+        
     }
     const CartSummaryCard = ({ onCheckout }) => {
         return (
@@ -90,7 +112,7 @@ function CartPage() {
                             </div>
                         ))}
                     </div>
-                    <CartSummaryCard total={total} onCheckout={() => alert("Thanh toán ngay")} />
+                    <CartSummaryCard total={total} onCheckout={() => message.info("Chưa có tính năng này!", 2)} />
                 </div>
             )
         }

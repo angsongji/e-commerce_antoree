@@ -113,7 +113,7 @@ function Footer() {
     <div className="px-[var(--padding-x)]">  
     {
       categories.length > 0 && (
-        <div className="py-10">
+        <div className="py-15">
         <p className="font-bold mb-3">Danh mục</p>
         <div className="flex gap-x-3 gap-y-2 flex-wrap text-[var(--medium-gray)] text-sm">
           {categories.map((category) => (

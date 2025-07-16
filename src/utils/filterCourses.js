@@ -32,3 +32,7 @@ export const getRandomCourse = (courses) => {
     return courses[index];
   };
   
+export const matchNameByCategory = (name, courses = []) => {
+    if (name.length === 0) return true;
+    return courses.filter(course => course.categories.some(cat =>  cat.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(cat.name.toLowerCase())));
+};

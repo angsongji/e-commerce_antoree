@@ -57,7 +57,7 @@ function SearchPage() {
         <SectionHeader
           title={`Kết quả phù hợp (${filterCourses.length})`}
           subtitle={`Các khóa học phù hợp với từ khóa: ${value}`}
-          decsAction={showFilter ? "Ẩn lọc" : `Hiện lọc (${selectedCategories.length + selectedPrices.length})`}
+          decsAction={filterCourses.length == 0 ? "" : `Hiện lọc (${selectedCategories.length + selectedPrices.length})`}
           onAction={() => setShowFilter(!showFilter)}
         />
         <div className="justify-center px-[var(--padding-x)] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">

@@ -36,7 +36,7 @@ function SectionAllCourses ({courses, categories,category,  isShorten}) {
             isShorten && filterCourses.length > 8 && (
               <div className="px-[var(--padding-x)] pb-10">
                 <button onClick={() => navigate(`/all-courses/${selectedCategory}`)} className="cursor-pointer text-sm font-semibold text-[var(--orange)] border border-[var(--orange)] px-4 py-2 rounded-md hover:bg-[var(--orange)] hover:text-white transition ">
-                  Tất cả khoá học {categories.find((category) => category.id === selectedCategory).name}
+                  Tất cả khoá học chủ đề {categories.find((category) => category.id === selectedCategory).name}
                 </button>
               </div>
             )

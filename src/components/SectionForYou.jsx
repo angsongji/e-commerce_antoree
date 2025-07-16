@@ -35,8 +35,9 @@ const SectionForYou = ({ courses, isShorten }) => {
             console.log("abc")
             const randomCourses = [];
             for(let i = 0; i < 8; i++){
-                console.log("abc "+i)
-                randomCourses.push(getRandomCourse(courses));
+                const course = getRandomCourse(courses);
+                if(randomCourses.some(c => c.id == course)) i--;
+                else randomCourses.push(course);
             }
             setFilterCourses(randomCourses);
         }else{

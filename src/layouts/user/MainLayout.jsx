@@ -6,6 +6,7 @@ import Footer from "../../components/Footer.jsx";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { FaArrowUp } from "react-icons/fa";
 import { fetchCourses } from "../../services/courseService";
+import FloatingChat from "../../components/FloatingChat.jsx"
 function MainLayout() {
   const { showScrollBtn, scrollToTop } = useScrollToTop();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -41,12 +42,12 @@ function MainLayout() {
       {showScrollBtn && (
         <button
           onClick={scrollToTop}
-          className="text-sm flex gap-1 items-center z-20 fixed bottom-6 right-6 bg-white text-[var(--orange)] p-5 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-105 transition cursor-pointer"
+          className="text-sm flex gap-1 items-center z-20 fixed bottom-20 right-6 bg-white text-[var(--orange)] p-5 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-105 transition cursor-pointer"
         >
           <FaArrowUp />
         </button>
       )}
-
+      <FloatingChat />
       {
         selectedCourse?.id && <CourseDetail course={selectedCourse} /> 
       }

@@ -187,7 +187,7 @@
       },
       {
         "id": 1,
-        "name": "Phát triển Web"
+        "name": "Lập trình Web"
       },
       {
         "id": 9,
@@ -433,7 +433,7 @@
       },
       {
         "id": 1,
-        "name": "Phát triển Web"
+        "name": "Lập trình Web"
       }
     ],
     "lastUpdate": "10/2025",
@@ -675,7 +675,7 @@
       },
       {
         "id": 1,
-        "name": "Phát triển Web"
+        "name": "Lập trình Web"
       },
       {
         "id": 2,
@@ -2371,6 +2371,363 @@
     "id": 20,
     "image": "https://picsum.photos/id/430/400/300",
     "title": "Re-Intermediate Real-Time Initiatives với Node.js",
+    "shortDescription": "Manager market order bar home moment quickly consumer within hear reflect.",
+    "author": {
+      "id": 41,
+      "name": "Sarah Hester",
+      "avatar": "https://api.dicebear.com/7.x/fun-emoji/svg?seed=41"
+    },
+    "price": 299000,
+    "rating": 3.7,
+    "votes": 121137,
+    "duration": 18,
+    "lessons": 34,
+    "categories": [
+      {
+        "id": 9,
+        "name": "Cơ bản lập trình"
+      }
+    ],
+    "lastUpdate": "3/2025",
+    "lessonContent": "Responsibility race choose build.\nHigh key bed enjoy Democrat voice.\nBig nothing put probably interesting successful.\nWhile institution hundred general.\nAge seat half city.\nDemocratic often pull include none leave more.\nWait Democrat exist debate window political charge.",
+    "requires": "To resource analysis since.\nCompare page television civil coach military.\nOfficer station official kitchen occur.",
+    "description": "Camera their long. Challenge strong dog. Bring allow six game. Two trial international century. Bank number however strong report card. List computer discover plan that. As avoid attorney degree entire trouble. Soon service effect hotel father. Fact drug water minute type decade. Above which choose. Research necessary small well add at. Company citizen education program serious everything cause more. Strategy American end stage value we. Ten sing guess.",
+    "comments": [
+      {
+        "id": 553,
+        "courseId": 20,
+        "user": {
+          "id": 100,
+          "name": "Nguyễn Văn A",
+          "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=100"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 21,
+        "date": "2024-09-19 16:41:48"
+      },
+      {
+        "id": 862,
+        "courseId": 20,
+        "user": {
+          "id": 101,
+          "name": "Trần Thị B",
+          "avatar": "https://api.dicebear.com/7.x/fun-emoji/svg?seed=101"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 33,
+        "date": "2024-11-27 16:41:48"
+      },
+      {
+        "id": 269,
+        "courseId": 20,
+        "user": {
+          "id": 102,
+          "name": "Phạm Văn C",
+          "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=102"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 31,
+        "date": "2025-03-28 16:41:48"
+      },
+      {
+        "id": 281,
+        "courseId": 20,
+        "user": {
+          "id": 103,
+          "name": "Lê Thị D",
+          "avatar": "https://api.dicebear.com/7.x/micah/svg?seed=103"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 30,
+        "date": "2024-12-06 16:41:48"
+      },
+      {
+        "id": 903,
+        "courseId": 20,
+        "user": {
+          "id": 104,
+          "name": "Hoàng Văn E",
+          "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=104"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 18,
+        "date": "2025-04-01 16:41:48"
+      },
+      {
+        "id": 823,
+        "courseId": 20,
+        "user": {
+          "id": 105,
+          "name": "Võ Thị F",
+          "avatar": "https://api.dicebear.com/7.x/notionists/svg?seed=105"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 27,
+        "date": "2025-04-23 16:41:48"
+      },
+      {
+        "id": 586,
+        "courseId": 20,
+        "user": {
+          "id": 106,
+          "name": "Đặng Văn G",
+          "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=106"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 23,
+        "date": "2025-01-07 16:41:48"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://picsum.photos/id/430/400/300",
+    "title": "1 Re-Intermediate Real-Time Initiatives với Node.js",
+    "shortDescription": "Manager market order bar home moment quickly consumer within hear reflect.",
+    "author": {
+      "id": 41,
+      "name": "Sarah Hester",
+      "avatar": "https://api.dicebear.com/7.x/fun-emoji/svg?seed=41"
+    },
+    "price": 299000,
+    "rating": 3.7,
+    "votes": 121137,
+    "duration": 18,
+    "lessons": 34,
+    "categories": [
+      {
+        "id": 9,
+        "name": "Cơ bản lập trình"
+      }
+    ],
+    "lastUpdate": "3/2025",
+    "lessonContent": "Responsibility race choose build.\nHigh key bed enjoy Democrat voice.\nBig nothing put probably interesting successful.\nWhile institution hundred general.\nAge seat half city.\nDemocratic often pull include none leave more.\nWait Democrat exist debate window political charge.",
+    "requires": "To resource analysis since.\nCompare page television civil coach military.\nOfficer station official kitchen occur.",
+    "description": "Camera their long. Challenge strong dog. Bring allow six game. Two trial international century. Bank number however strong report card. List computer discover plan that. As avoid attorney degree entire trouble. Soon service effect hotel father. Fact drug water minute type decade. Above which choose. Research necessary small well add at. Company citizen education program serious everything cause more. Strategy American end stage value we. Ten sing guess.",
+    "comments": [
+      {
+        "id": 553,
+        "courseId": 20,
+        "user": {
+          "id": 100,
+          "name": "Nguyễn Văn A",
+          "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=100"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 21,
+        "date": "2024-09-19 16:41:48"
+      },
+      {
+        "id": 862,
+        "courseId": 20,
+        "user": {
+          "id": 101,
+          "name": "Trần Thị B",
+          "avatar": "https://api.dicebear.com/7.x/fun-emoji/svg?seed=101"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 33,
+        "date": "2024-11-27 16:41:48"
+      },
+      {
+        "id": 269,
+        "courseId": 20,
+        "user": {
+          "id": 102,
+          "name": "Phạm Văn C",
+          "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=102"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 31,
+        "date": "2025-03-28 16:41:48"
+      },
+      {
+        "id": 281,
+        "courseId": 20,
+        "user": {
+          "id": 103,
+          "name": "Lê Thị D",
+          "avatar": "https://api.dicebear.com/7.x/micah/svg?seed=103"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 30,
+        "date": "2024-12-06 16:41:48"
+      },
+      {
+        "id": 903,
+        "courseId": 20,
+        "user": {
+          "id": 104,
+          "name": "Hoàng Văn E",
+          "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=104"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 18,
+        "date": "2025-04-01 16:41:48"
+      },
+      {
+        "id": 823,
+        "courseId": 20,
+        "user": {
+          "id": 105,
+          "name": "Võ Thị F",
+          "avatar": "https://api.dicebear.com/7.x/notionists/svg?seed=105"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 27,
+        "date": "2025-04-23 16:41:48"
+      },
+      {
+        "id": 586,
+        "courseId": 20,
+        "user": {
+          "id": 106,
+          "name": "Đặng Văn G",
+          "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=106"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 23,
+        "date": "2025-01-07 16:41:48"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://picsum.photos/id/430/400/300",
+    "title": "2 Re-Intermediate Real-Time Initiatives với Node.js",
+    "shortDescription": "Manager market order bar home moment quickly consumer within hear reflect.",
+    "author": {
+      "id": 41,
+      "name": "Sarah Hester",
+      "avatar": "https://api.dicebear.com/7.x/fun-emoji/svg?seed=41"
+    },
+    "price": 299000,
+    "rating": 3.7,
+    "votes": 121137,
+    "duration": 18,
+    "lessons": 34,
+    "categories": [
+      {
+        "id": 9,
+        "name": "Cơ bản lập trình"
+      }
+    ],
+    "lastUpdate": "3/2025",
+    "lessonContent": "Responsibility race choose build.\nHigh key bed enjoy Democrat voice.\nBig nothing put probably interesting successful.\nWhile institution hundred general.\nAge seat half city.\nDemocratic often pull include none leave more.\nWait Democrat exist debate window political charge.",
+    "requires": "To resource analysis since.\nCompare page television civil coach military.\nOfficer station official kitchen occur.",
+    "description": "Camera their long. Challenge strong dog. Bring allow six game. Two trial international century. Bank number however strong report card. List computer discover plan that. As avoid attorney degree entire trouble. Soon service effect hotel father. Fact drug water minute type decade. Above which choose. Research necessary small well add at. Company citizen education program serious everything cause more. Strategy American end stage value we. Ten sing guess.",
+    "comments": [
+      {
+        "id": 553,
+        "courseId": 20,
+        "user": {
+          "id": 100,
+          "name": "Nguyễn Văn A",
+          "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=100"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 21,
+        "date": "2024-09-19 16:41:48"
+      },
+      {
+        "id": 862,
+        "courseId": 20,
+        "user": {
+          "id": 101,
+          "name": "Trần Thị B",
+          "avatar": "https://api.dicebear.com/7.x/fun-emoji/svg?seed=101"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 33,
+        "date": "2024-11-27 16:41:48"
+      },
+      {
+        "id": 269,
+        "courseId": 20,
+        "user": {
+          "id": 102,
+          "name": "Phạm Văn C",
+          "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=102"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 31,
+        "date": "2025-03-28 16:41:48"
+      },
+      {
+        "id": 281,
+        "courseId": 20,
+        "user": {
+          "id": 103,
+          "name": "Lê Thị D",
+          "avatar": "https://api.dicebear.com/7.x/micah/svg?seed=103"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 4,
+        "react": 30,
+        "date": "2024-12-06 16:41:48"
+      },
+      {
+        "id": 903,
+        "courseId": 20,
+        "user": {
+          "id": 104,
+          "name": "Hoàng Văn E",
+          "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=104"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 18,
+        "date": "2025-04-01 16:41:48"
+      },
+      {
+        "id": 823,
+        "courseId": 20,
+        "user": {
+          "id": 105,
+          "name": "Võ Thị F",
+          "avatar": "https://api.dicebear.com/7.x/notionists/svg?seed=105"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 27,
+        "date": "2025-04-23 16:41:48"
+      },
+      {
+        "id": 586,
+        "courseId": 20,
+        "user": {
+          "id": 106,
+          "name": "Đặng Văn G",
+          "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=106"
+        },
+        "content": "Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.Khóa học rất bổ ích và chi tiết. Giảng viên trình bày rõ ràng, dễ hiểu, có nhiều ví dụ thực tiễn. Tôi đã học được rất nhiều kỹ năng mới và có thể áp dụng ngay vào công việc hiện tại. Rất khuyến khích mọi người tham gia khóa học này nếu muốn nâng cao kiến thức và kỹ năng.",
+        "rating": 3,
+        "react": 23,
+        "date": "2025-01-07 16:41:48"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://picsum.photos/id/430/400/300",
+    "title": "3 Re-Intermediate Real-Time Initiatives với Node.js",
     "shortDescription": "Manager market order bar home moment quickly consumer within hear reflect.",
     "author": {
       "id": 41,
