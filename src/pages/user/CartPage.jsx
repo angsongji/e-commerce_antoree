@@ -1,7 +1,7 @@
 import SectionHeader from "../../components/SectionHeader";
 import CourseCartCard from "../../components/CourseCartCard";
 import { useState, useEffect } from "react";
-import useScrollToTop from "../../utils/useScrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import { getCart } from "../../services/cartService";
 import { fetchCourses } from "../../services/courseService";
 import { RiDeleteBin2Fill } from "react-icons/ri";

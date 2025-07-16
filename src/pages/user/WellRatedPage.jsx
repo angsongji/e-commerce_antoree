@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import SectionWellRated from "../../components/SectionWellRated";
-import useScrollToTop from "../../utils/useScrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import { fetchCourses } from "../../services/courseService";
 function WellRatedPage() {
     const [courses, setCourses] = useState([]);

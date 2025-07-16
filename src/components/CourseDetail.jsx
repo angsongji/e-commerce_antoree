@@ -158,7 +158,7 @@ function CourseDetail({ course }) {
                 <div className="flex gap-2 flex-wrap mt-2">
                   {
                     course.categories.map((category, index) => (
-                      <Link to={`/search/${category.name}`} key={index} className="text-xs text-white bg-[var(--medium-gray)] py-1 px-2 rounded-full">{category.name}</Link>
+                      <Link to={`/all-courses/${category.id}`} key={index} className="text-xs text-white bg-[var(--medium-gray)] py-1 px-2 rounded-full">{category.name}</Link>
                     ))
                   }
                 </div>

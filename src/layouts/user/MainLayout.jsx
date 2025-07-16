@@ -3,7 +3,7 @@ import { Outlet, useSearchParams } from "react-router-dom";
 import CourseDetail from "../../components/CourseDetail.jsx";
 import Header from "../../components/Header.jsx";
 import Footer from "../../components/Footer.jsx";
-import useScrollToTop from "../../utils/useScrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import { FaArrowUp } from "react-icons/fa";
 import { fetchCourses } from "../../services/courseService";
 function MainLayout() {

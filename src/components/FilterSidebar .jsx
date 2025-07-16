@@ -1,17 +1,29 @@
 import { useState } from "react";
 import { fetchCategories } from "../services/categoryService";
 import { useEffect } from "react";
-const FilterSidebar = () => {
+import {matchCategories, matchPrice} from "../utils/filterCourses";
+const FilterSidebar = ({courses, filterCourses, setFilterCourses, selectedCategories, setSelectedCategories, selectedPrices, setSelectedPrices}) => {
   const [categories, setCategories] = useState([]);
-  const prices = [
-    "Miễn phí",
-    "< 500.000đ",
-    "500.000đ đến 1.000.000đ",
-    "> 1.000.000đ",
+  const priceRanges = [
+    {
+      name: "Miễn phí",
+      value: "free",
+    },
+    {
+      name: "< 500.000đ",
+      value: "0-500000",
+    },
+    {
+      name: "500.000đ đến 1.000.000đ",
+      value: "500000-1000000",
+    },
+    {
+      name: "> 1.000.000đ",
+      value: "1000000-",
+    },
   ];
 
-  const [selectedTopics, setSelectedTopics] = useState([]);
-  const [selectedPrices, setSelectedPrices] = useState([]);
+  
 
   useEffect(() => {
     const fetchInitialData = async () => {
@@ -26,9 +38,18 @@ const FilterSidebar = () => {
     fetchInitialData();
   }, []);
 
-  const handleTopicChange = (topic) => {
-    setSelectedTopics((prev) =>
-      prev.includes(topic) ? prev.filter((t) => t !== topic) : [...prev, topic]
+  useEffect(() => {
+    const filteredCourses = courses.filter((course) => {
+      const matchesCategories = matchCategories(course, selectedCategories);
+      const matchesPrices = matchPrice(course, selectedPrices);
+      return matchesCategories && matchesPrices;
+    });
+    setFilterCourses(filteredCourses);
+  }, [selectedCategories, selectedPrices]);
+
+  const handleCategoryChange = (categoryId) => {
+    setSelectedCategories((prev) =>
+      prev.includes(categoryId) ? prev.filter((t) => t !== categoryId) : [...prev, categoryId]
     );
   };
 
@@ -50,8 +71,8 @@ const FilterSidebar = () => {
                 type="checkbox"
                 id={`topic-${index}`}
                 className="accent-[var(--medium-gray)] cursor-pointer"
-                checked={selectedTopics.includes(category.name)}
-                onChange={() => handleTopicChange(category.name)}
+                checked={selectedCategories.includes(category.id)}
+                onChange={() => handleCategoryChange(category.id)}
               />
               <label htmlFor={`topic-${index}`} className="cursor-pointer">
                 {category.name}
@@ -65,17 +86,17 @@ const FilterSidebar = () => {
       <div>
         <h3 className="font-bold mb-2 text-base text-[var(--dark-gray)]">Mức giá</h3>
         <ul className="space-y-2">
-          {prices.map((price, index) => (
+          {priceRanges.map((priceRange, index) => (
             <li key={index} className="flex items-center gap-2">
               <input
                 type="checkbox"
                 id={`price-${index}`}
                 className="accent-[var(--medium-gray)] cursor-pointer"
-                checked={selectedPrices.includes(price)}
-                onChange={() => handlePriceChange(price)}
+                checked={selectedPrices.includes(priceRange.value)}
+                onChange={() => handlePriceChange(priceRange.value)}
               />
               <label htmlFor={`price-${index}`} className="cursor-pointer ">
-                {price}
+                {priceRange.name}
               </label>
             </li>
           ))}

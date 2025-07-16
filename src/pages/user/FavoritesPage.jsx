@@ -1,7 +1,7 @@
 import SectionHeader from "../../components/SectionHeader";
 import CourseCardVertical1 from "../../components/CourseCardVertical1";
 import { IoIosHeart } from "react-icons/io";
-import useScrollToTop from "../../utils/useScrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import { useEffect, useState } from "react";
 import { getFavorites } from "../../services/favoriteService";
 import { fetchCourses } from "../../services/courseService";
