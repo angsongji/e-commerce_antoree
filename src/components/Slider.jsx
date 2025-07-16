@@ -54,7 +54,7 @@ const HeroSlider = () => {
               isActive ? "active" : ""
             } ${background}`}
           >
-            <div className=" shadow-[0_3px_10px_rgb(0,0,0,0.2)] absolute top-1/6 left-1/10 rounded-md p-8 w-fit h-fit flex flex-col gap-3 justify-start  bg-white ">
+            <div className=" shadow-[0_3px_10px_rgb( 70,0,0,0.2)] absolute top-1/6 left-1/10 rounded-md p-8 w-fit h-fit flex flex-col gap-3 justify-start  bg-white ">
               <div className="text-3xl font-bold  text-left text-[var(--dark-gray)]">
                 {title}
               </div>

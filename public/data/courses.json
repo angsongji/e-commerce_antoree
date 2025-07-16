@@ -302,7 +302,7 @@
       "name": "Theresa Mays",
       "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=76"
     },
-    "price": 999000,
+    "price": 1999000,
     "rating": 3.6,
     "votes": 115741,
     "duration": 50,
@@ -1151,7 +1151,7 @@
       "name": "Bryan Fletcher",
       "avatar": "https://api.dicebear.com/7.x/notionists/svg?seed=21"
     },
-    "price": 999000,
+    "price": 1599000,
     "rating": 4.4,
     "votes": 28372,
     "duration": 43,
@@ -1643,7 +1643,7 @@
       "name": "Ryan King",
       "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=16"
     },
-    "price": 999000,
+    "price": 1099000,
     "rating": 4.9,
     "votes": 200917,
     "duration": 14,
@@ -2012,7 +2012,7 @@
       "name": "Ann Clayton",
       "avatar": "https://api.dicebear.com/7.x/lorelei/svg?seed=64"
     },
-    "price": 199000,
+    "price": 0,
     "rating": 4.7,
     "votes": 240622,
     "duration": 94,
@@ -2487,3 +2487,4 @@
     ]
   }
 ]
+

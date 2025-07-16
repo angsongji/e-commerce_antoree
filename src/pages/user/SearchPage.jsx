@@ -3,34 +3,18 @@ import { useParams } from "react-router-dom";
 import SectionHeader from "../../components/SectionHeader";
 import CourseCardVertical1 from "../../components/CourseCardVertical1";
 import FilterSidebar from "../../components/FilterSidebar ";
-import useScrollToTop from "../../utils/useScrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import { fetchCourses } from "../../services/courseService";
 import { useState, useEffect } from "react";
-const results = [
-  {
-    id: 4,
-    image: "https://www.shapedivider.app/img/preview_tablet_x2.b0ab64e4.png",
-    title: "Tên khoá học java",
-    price: 2000000,
-    rating: 4.9,
-    votes: 1990,
-    description: "Mô tả ngắn của khoá học hiện ở đây. Mô tả có thể dài nhưng sẽ bị giới hạn dòng hiển thị abc absbah bdsajdbak b kdjahda"
-  },
-  {
-    id: 5,
-    image: "https://www.shapedivider.app/img/preview_tablet_x2.b0ab64e4.png",
-    title: "Tên khoá học python",
-    price: 2000000,
-    rating: 4.9,
-    votes: 1990,
-    description: "Mô tả ngắn của khoá học hiện ở đây. Mô tả có thể dài nhưng sẽ bị giới hạn dòng hiển thị abc absbah bdsajdbak b kdjahda"
-  },
-];
+
 function SearchPage() {
   const { value } = useParams();
   const [showFilter, setShowFilter] = useState(false);
   const {scrollToTop } = useScrollToTop();
   const [courses, setCourses] = useState([]);
+  const [filterCourses, setFilterCourses] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [selectedPrices, setSelectedPrices] = useState([]);
   useEffect(() => {
     scrollToTop();
   }, []);
@@ -42,6 +26,7 @@ function SearchPage() {
         const coursesData = await fetchCourses();
         const filteredCourses = coursesData.data.filter((course) => course.title.toLowerCase().includes(value.toLowerCase()));
         setCourses(filteredCourses);
+        setFilterCourses(filteredCourses);
       } catch (error) {
         console.error("Lỗi khi tải course", error);
       }
@@ -62,7 +47,7 @@ function SearchPage() {
         {showFilter && (
           <div className="bg-white shadow-md lg:shadow-none h-[100vh] pr-10">
             <SectionHeader title=" Bộ lọc" subtitle="Lọc khóa học" />
-            <FilterSidebar />
+            <FilterSidebar courses={courses} filterCourses={filterCourses} setFilterCourses={setFilterCourses} selectedCategories={selectedCategories} setSelectedCategories={setSelectedCategories} selectedPrices={selectedPrices} setSelectedPrices={setSelectedPrices}/>
           </div>
         )}
       </div>
@@ -70,14 +55,13 @@ function SearchPage() {
       {/* ==== NỘI DUNG CHÍNH ==== */}
       <div className=" ">
         <SectionHeader
-          title={`Kết quả phù hợp (${courses.length})`}
+          title={`Kết quả phù hợp (${filterCourses.length})`}
           subtitle={`Các khóa học phù hợp với từ khóa: ${value}`}
-          decsAction={showFilter ? "Ẩn lọc" : "Hiện lọc"}
+          decsAction={showFilter ? "Ẩn lọc" : `Hiện lọc (${selectedCategories.length + selectedPrices.length})`}
           onAction={() => setShowFilter(!showFilter)}
         />
-
         <div className="justify-center px-[var(--padding-x)] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
-          {courses.map((r) => (
+          {filterCourses.map((r) => (
             <CourseCardVertical1 key={r.id} course={r} isShorten={true} />
           ))}
         </div>

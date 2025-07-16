@@ -8,6 +8,7 @@ const PATH = {
     NOT_FOUND: "*",
     WELL_RATED: "/well-rated",
     FOR_YOU: "/for-you",
+    ALL_COURSES: "/all-courses/:category",
   };
   
   

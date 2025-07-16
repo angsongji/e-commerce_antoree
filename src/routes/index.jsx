@@ -15,6 +15,7 @@ const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
 const HistoriesPage = lazy(() => import("../pages/user/HistoriesPage"));
 const WellRatedPage = lazy(() => import("../pages/user/WellRatedPage"));
 const ForYouPage = lazy(() => import("../pages/user/ForYouPage"));
+import AllCoursesPage from "../pages/user/AllCoursesPage";
 const router = createBrowserRouter([
   {
     path: PATH.HOME,
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: PATH.FOR_YOU,
         element: <ForYouPage />,
+      },
+      {
+        path: PATH.ALL_COURSES,
+        element: <AllCoursesPage />,
       },
     ],
   },

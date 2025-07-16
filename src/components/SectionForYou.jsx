@@ -3,24 +3,64 @@ import CourseCardVertical1 from "./CourseCardVertical1.jsx"
 import SectionHeader from "./SectionHeader.jsx"
 import { useNavigate } from "react-router-dom";
 import PATH from "../routes/path";
+import { fetchCourses } from "../services/courseService";
+import { getCart } from "../services/cartService";
+import { useEffect, useState } from "react";
+import { getRandomCourse, matchCategories } from "../utils/filterCourses";
 const SectionForYou = ({ courses, isShorten }) => {
+    //Gợi ý các khóa học tương tự chủ đề với các khóa học trong giỏ hàng
     const navigate = useNavigate();
-    courses.sort((a, b) => b.rating - a.rating);
-    courses = courses.filter((course) => course.rating >= 4);
+    const [filterCourses, setFilterCourses] = useState([]);
+    let isRandom = false; //Check sẽ random hay lấy gợi ý theo trong giỏ hàng
+    useEffect(() => {
+        const cart = getCart();
+        const fetchCoursesCall = async () => {
+            try {
+                const response = await fetchCourses();
+                const filteredCourses = cart
+                    .map(id => response.data.find(course => course.id === id))
+                    .filter(Boolean);
+                    if (filteredCourses.length === 0){
+                        isRandom = true;
+                    }
+                    handleFilterCourses(filteredCourses);
+            } catch (error) {
+                console.error("Error fetching courses:", error);
+            }
+        };
+        fetchCoursesCall();
+    }, []);
+    const handleFilterCourses = (filterCourses) => {
+        if(filterCourses.length === 0){
+            console.log("abc")
+            const randomCourses = [];
+            for(let i = 0; i < 8; i++){
+                console.log("abc "+i)
+                randomCourses.push(getRandomCourse(courses));
+            }
+            setFilterCourses(randomCourses);
+        }else{
+            const uniqueCategoryIds = [...new Set(
+                filterCourses.flatMap(c => c.categories.map(cat => cat.id))
+              )];
+              const results = courses.filter(c => matchCategories(c, uniqueCategoryIds));
+            setFilterCourses(results);
+        }
+    }
     return (
         <div>
             <SectionHeader
                 title="Dành cho bạn"
-                subtitle="Các khóa học có thể phù hợp với bạn"
-                decsAction={isShorten ? "Xem tất cả" : ""}
+                subtitle="Các khóa học tương tự chủ đề với các khóa học trong giỏ hàng hoặc ngẫu nhiên nếu giỏ hàng trống"
+                decsAction={isShorten && filterCourses.length > 4 ? "Xem tất cả" : ""}
                 onAction={() => navigate(PATH.FOR_YOU)}  // hoặc dùng Link nếu muốn
             />
             <div className=" grid grid-cols-4 gap-5 px-[var(--padding-x)] pt-5 pb-10">
-                {courses.slice(0, isShorten ? 4 : courses.length).map((course) => (
+                {filterCourses.slice(0, isShorten ? 4 : filterCourses.length).map((course) => (
                     <CourseCardVertical1
                         key={course.id}
                         course={course}
-                        isShorten={false}
+                        isShorten={isShorten}
                     />
                 ))}
             </div>
