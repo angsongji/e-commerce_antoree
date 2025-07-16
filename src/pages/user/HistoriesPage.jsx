@@ -1,12 +1,16 @@
+import { Modal, message } from 'antd';
 import CourseCardVertical1 from "../../components/CourseCardVertical1";
 import SectionHeader from "../../components/SectionHeader";
 import { TiDelete } from "react-icons/ti";
 import { getHistory, clearHistory, removeHistory } from "../../services/historyService";
 import { fetchCourses } from "../../services/courseService";
 import { useEffect, useState } from "react";
+import useScrollToTop  from "../../hooks/useScrollToTop";
 function HistoriesPage() {
+    const {scrollToTop} = useScrollToTop();
     const [results, setResults] = useState([]);
     useEffect(() => {
+        scrollToTop();
         const histories = getHistory();
         const fetchCoursesCall = async () => {
             try {
@@ -24,17 +28,38 @@ function HistoriesPage() {
     }, []);
 
     const clearHistoryAction = () => {
-        clearHistory();
+        Modal.confirm({
+            title: 'Xác nhận?',
+            content: 'Bạn chắc chắn muốn xóa tất cả lịch sử đã xem',
+            okText: 'Đồng ý',
+            cancelText: 'Quay về',
+            okType: 'danger',
+            onOk() {
+                clearHistory();
         setResults([]);
+                message.success('Đã xóa tất cả lịch sử!', 2);
+            },
+          });
+        
     };
     const removeHistoryAction = (courseId) => {
-        removeHistory(courseId);
-        setResults(results.filter((r) => r.id !== courseId));
+        Modal.confirm({
+            title: 'Xác nhận?',
+            content: 'Bạn chắc chắn muốn xóa lịch sử này',
+            okText: 'Đồng ý',
+            cancelText: 'Quay về',
+            okType: 'danger',
+            onOk() {
+                removeHistory(courseId);
+               setResults(results.filter((r) => r.id !== courseId));
+                message.success('Đã xóa lịch sử chọn!', 2);
+            },
+          });
     };
     return <div className="bg-white py-10">
         <SectionHeader
             title="Lịch sử đã xem"
-            subtitle="Các khóa học đã xem trong vòng 10 ngày qua"
+            subtitle="Hiển thị 15 khóa học đã xem gần đây nhất"
             decsAction={results.length > 0 ? "Xóa lịch sử" : ""}
             onAction={results.length > 0 ? clearHistoryAction : undefined}
         />

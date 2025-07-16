@@ -47,7 +47,7 @@ function SearchPage() {
         {showFilter && (
           <div className="bg-white shadow-md lg:shadow-none h-[100vh] pr-10">
             <SectionHeader title=" Bộ lọc" subtitle="Lọc khóa học" />
-            <FilterSidebar courses={courses} filterCourses={filterCourses} setFilterCourses={setFilterCourses} selectedCategories={selectedCategories} setSelectedCategories={setSelectedCategories} selectedPrices={selectedPrices} setSelectedPrices={setSelectedPrices}/>
+            <FilterSidebar courses={courses} setFilterCourses={setFilterCourses} selectedCategories={selectedCategories} setSelectedCategories={setSelectedCategories} selectedPrices={selectedPrices} setSelectedPrices={setSelectedPrices}/>
           </div>
         )}
       </div>
@@ -57,7 +57,7 @@ function SearchPage() {
         <SectionHeader
           title={`Kết quả phù hợp (${filterCourses.length})`}
           subtitle={`Các khóa học phù hợp với từ khóa: ${value}`}
-          decsAction={showFilter ? "Ẩn lọc" : `Hiện lọc (${selectedCategories.length + selectedPrices.length})`}
+          decsAction={filterCourses.length > 0 || (selectedCategories.length + selectedPrices.length > 0) ? `Hiện lọc (${selectedCategories.length + selectedPrices.length})` : ""}
           onAction={() => setShowFilter(!showFilter)}
         />
         <div className="justify-center px-[var(--padding-x)] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">

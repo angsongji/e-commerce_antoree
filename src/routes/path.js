@@ -9,6 +9,7 @@ const PATH = {
     WELL_RATED: "/well-rated",
     FOR_YOU: "/for-you",
     ALL_COURSES: "/all-courses/:category",
+    SUGGEST_COURSES: "/suggest-courses"
   };
   
   

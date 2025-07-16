@@ -11,9 +11,9 @@ export const addToCart = (courseId) => {
   if (!exists) {
     const updated = [courseId,...current];
     localStorage.setItem(CART_KEY, JSON.stringify(updated));
-    return updated;
+    return 1;
   }
-  return current;
+  return 0;
 };
 
 export const removeFromCart = (courseId) => {

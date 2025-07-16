@@ -2,7 +2,7 @@ import { useState } from "react";
 import { fetchCategories } from "../services/categoryService";
 import { useEffect } from "react";
 import {matchCategories, matchPrice} from "../utils/filterCourses";
-const FilterSidebar = ({courses, filterCourses, setFilterCourses, selectedCategories, setSelectedCategories, selectedPrices, setSelectedPrices}) => {
+const FilterSidebar = ({courses, setFilterCourses, selectedCategories, setSelectedCategories, selectedPrices, setSelectedPrices}) => {
   const [categories, setCategories] = useState([]);
   const priceRanges = [
     {
