@@ -11,7 +11,6 @@ const SectionForYou = ({ courses, isShorten }) => {
     //Gợi ý các khóa học tương tự chủ đề với các khóa học trong giỏ hàng
     const navigate = useNavigate();
     const [filterCourses, setFilterCourses] = useState([]);
-    let isRandom = false; //Check sẽ random hay lấy gợi ý theo trong giỏ hàng
     useEffect(() => {
         const cart = getCart();
         const fetchCoursesCall = async () => {
@@ -20,9 +19,6 @@ const SectionForYou = ({ courses, isShorten }) => {
                 const filteredCourses = cart
                     .map(id => response.data.find(course => course.id === id))
                     .filter(Boolean);
-                    if (filteredCourses.length === 0){
-                        isRandom = true;
-                    }
                     handleFilterCourses(filteredCourses);
             } catch (error) {
                 console.error("Error fetching courses:", error);
@@ -32,7 +28,6 @@ const SectionForYou = ({ courses, isShorten }) => {
     }, []);
     const handleFilterCourses = (filterCourses) => {
         if(filterCourses.length === 0){
-            console.log("abc")
             const randomCourses = [];
             for(let i = 0; i < 8; i++){
                 const course = getRandomCourse(courses);

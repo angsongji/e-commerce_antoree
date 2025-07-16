@@ -1,9 +1,6 @@
-import SectionHeader from "../../components/SectionHeader";
-import CourseCardVertical1 from "../../components/CourseCardVertical1";
-import { IoIosHeart } from "react-icons/io";
+
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { useEffect, useState } from "react";
-import { matchCategories } from "../../utils/filterCourses";
 import { fetchCourses } from "../../services/courseService";
 import { fetchCategories } from "../../services/categoryService";
 import { useParams } from "react-router-dom";

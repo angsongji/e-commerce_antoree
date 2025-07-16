@@ -1,7 +1,6 @@
 import { getFavorites } from "./favoriteService";
 import { getHistory } from "./historyService";
 import { fetchCourses } from "./courseService";
-import { fetchCategories } from "./categoryService";
 import { matchNameByCategory } from "../utils/filterCourses";
 
 // Gợi ý AI : giả lập GET API /api/suggestions?userId=xxx
@@ -22,7 +21,6 @@ export const getAIReply = async (message = "") => {
   const courses = await fetchCourses();
   const msg = message.toLowerCase();
 
-  //Nội dung người dùng gửi có chứa chủ đề hoặc chủ đề có chứa nội dung người dùng gửi
   const matchedCourses = matchNameByCategory(msg, courses.data);
   if (matchedCourses.length > 0) {
     let reply = ``;

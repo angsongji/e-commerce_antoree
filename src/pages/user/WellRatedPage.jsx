@@ -11,7 +11,6 @@ function WellRatedPage() {
     
     useEffect(() => {
       const fetchInitialData = async () => {
-        // setLoading(true);
         try {
           const coursesData = await fetchCourses();
           setCourses(coursesData.data);

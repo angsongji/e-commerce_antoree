@@ -3,13 +3,11 @@ import CourseCardVertical2 from "./CourseCardVertical2";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {matchCategories} from "../utils/filterCourses";
-import PATH from "../routes/path";
 function SectionAllCourses ({courses, categories,category,  isShorten}) {
     const navigate = useNavigate();
     const [filterCourses, setFilterCourses] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState(category);
     useEffect(() => {
-        console.log(courses);
         const filteredCourses = courses.filter((course) => {
             return matchCategories(course, [selectedCategory]);
             });

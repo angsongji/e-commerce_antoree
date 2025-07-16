@@ -10,60 +10,6 @@ import paypal from "../assets/paypal.png";
 import PATH from "../routes/path";
 import { useState, useEffect } from "react";
 import { fetchCategories } from "../services/categoryService";
-// const categories = [
-//     {
-//       id: 1,
-//       name: "Tất cả",
-//     },
-//     {
-//       id: 2,
-//       name: "Khoa học",
-//     },
-//     {
-//       id: 3,
-//       name: "Khoa học",
-//     },
-//     {
-//       id: 4,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 5,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 6,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 7,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 8,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 9,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 10,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 11,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 12,
-//       name: "Khoa học máy tính",
-//     },
-//     {
-//       id: 13,
-//       name: "Khoa học máy tính",
-//     },
-//   ];
   const paymentMethod = [
     {
       id: 1,

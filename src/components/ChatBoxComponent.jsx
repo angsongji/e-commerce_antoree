@@ -17,11 +17,9 @@ const ChatBoxComponent = ({ chats, setChats }) => {
             isUser: true
         };
 
-        // Hiển thị tin nhắn người dùng trước
         setChats(prev => [...prev, userChat]);
         setContent("");
 
-        // Phản hồi AI
         async function handleReply() {
             try {
                 const reply = await getAIReply(content);
@@ -35,7 +33,7 @@ const ChatBoxComponent = ({ chats, setChats }) => {
                     });
                 }
                 const aiChat = {
-                    id: chats.length + 2, // có thể dùng Date.now() cho an toàn hơn
+                    id: chats.length + 2, 
                     content: replyHandle,
                     createdAt: new Date().toTimeString().split(" ")[0],
                     isUser: false

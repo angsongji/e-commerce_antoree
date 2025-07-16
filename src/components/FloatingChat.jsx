@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 import { FaComments } from "react-icons/fa";
 import ChatBoxComponent from "./ChatBoxComponent";
 const FloatingChat = () => {

@@ -1,11 +1,5 @@
 import { useState, useEffect } from "react";
 import HeroSlider from "../../components/Slider.jsx";
-import CourseCardVertical1 from "../../components/CourseCardVertical1.jsx"
-import SectionHeader2 from "../../components/SectionHeader2.jsx";
-import SectionHeader from "../../components/SectionHeader.jsx";
-import { useNavigate } from "react-router-dom";
-import PATH from "../../routes/path.js"
-import CourseCardVertical2 from "../../components/CourseCardVertical2.jsx"
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { fetchCourses } from "../../services/courseService";
 import { fetchCategories } from "../../services/categoryService";
@@ -15,7 +9,6 @@ import SectionAllCourses from "../../components/SectionAllCourses";
 function HomePage() {
   const [courses, setCourses] = useState([]);
   const [categories, setCategories] = useState([]);
-  const navigate = useNavigate();
   const [loading, setLoading]  = useState(true);
   const { scrollToTop } = useScrollToTop();
   useEffect(() => {

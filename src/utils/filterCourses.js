@@ -33,6 +33,7 @@ export const getRandomCourse = (courses) => {
   };
   
 export const matchNameByCategory = (name, courses = []) => {
+    //Khóa học có tên chứa name hoặc khóa học có thể loại khớp với name hoặc khóa học có name khóp với thể loại của khóa học đó
     if (name.length === 0) return true;
-    return courses.filter(course => course.categories.some(cat =>  cat.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(cat.name.toLowerCase())));
+    return courses.filter(course => matchKeyword(course, name) || course.categories.some(cat =>  cat.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(cat.name.toLowerCase())));
 };

@@ -1,8 +1,7 @@
 
-import { useParams } from "react-router-dom";
+
 import SectionHeader from "../../components/SectionHeader";
 import CourseCardVertical1 from "../../components/CourseCardVertical1";
-import FilterSidebar from "../../components/FilterSidebar ";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { fetchSuggestions } from "../../services/aiService";
 import { useState, useEffect } from "react";

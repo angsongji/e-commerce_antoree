@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import adventureMap from "../assets/adventureMap.svg";
 import helloMan from "../assets/helloMan.svg";
-import { Link } from "react-router-dom";
 const slides = [
   {
     id: 1,

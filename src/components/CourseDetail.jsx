@@ -1,5 +1,5 @@
 import { Modal, message } from 'antd';
-import { FaStar, FaHeart, FaRegClock, FaBook, FaTags } from "react-icons/fa";
+import { FaStar, FaRegClock, FaBook, FaTags } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";

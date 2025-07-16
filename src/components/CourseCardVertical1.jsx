@@ -1,8 +1,7 @@
 import {useSearchParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { addToHistory } from "../services/historyService";
-import { toggleFavorite } from "../services/favoriteService";
 const CourseCardVertical1 = ({ course, isShorten }) => {
     const [hover, setHover] = useState(false);
     const [searchParams, setSearchParams] = useSearchParams();

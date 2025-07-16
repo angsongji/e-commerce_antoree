@@ -59,7 +59,7 @@ function HistoriesPage() {
     return <div className="bg-white py-10">
         <SectionHeader
             title="Lịch sử đã xem"
-            subtitle="Các khóa học đã xem trong vòng 10 ngày qua"
+            subtitle="Hiển thị 15 khóa học đã xem gần đây nhất"
             decsAction={results.length > 0 ? "Xóa lịch sử" : ""}
             onAction={results.length > 0 ? clearHistoryAction : undefined}
         />
