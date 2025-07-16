@@ -1,5 +1,5 @@
 import logoWeb from "../assets/logoWeb.png";
-import SearchComponent from "./searchComponent";
+import SearchComponent from "./SearchComponent";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { GoHistory } from "react-icons/go";
 import { MdOutlineShoppingCart } from "react-icons/md";
