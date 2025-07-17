@@ -14,25 +14,25 @@ Giao diện khi truy cập trang web sau khi hoàn thiện dự án:
 git clone https://github.com/angsongji/e-commerce_antoree Antoree
 cd Antoree
 
-### 2. **Cài đặt dependencies**
+### 2. Cài đặt dependencies
 ```bash
 npm install
 # hoặc
 # yarn install
 
-### 3. **Chạy dự án ở chế độ development**
+### 3. Chạy dự án ở chế độ development
 ```bash
 npm run dev
 # hoặc
 # yarn dev
 
-### 4. Sau đó có thể **Build dự án cho production**
+### 4. Sau đó có thể Build dự án cho production
 ```bash
 npm run build
 # hoặc
 # yarn build
 
-### Mở rộng: Sau đó có thể **Build và chạy preview bản build dự án cho production**
+### Mở rộng: Sau đó có thể Build và chạy preview bản build dự án cho production
 ```bash
 npm run build //Build
 # hoặc
