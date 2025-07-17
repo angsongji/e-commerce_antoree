@@ -115,7 +115,7 @@ function Footer() {
             }
           </div>
         </div>
-        <div className="hidden md:flex flex-col gap-2 items-center w-full bg-red-200">
+        <div className="hidden md:flex flex-col gap-2 items-center w-full">
           <img src={logoWeb} className="w-[50%] h-auto" />
           <div className="text-2xl md:text-4xl text-[var(--orange)]">Antoree</div>
         </div>
