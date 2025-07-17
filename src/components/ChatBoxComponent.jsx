@@ -52,7 +52,7 @@ const ChatBoxComponent = ({ chats, setChats }) => {
             <div className={` flex items-end gap-2 ${chat.isUser ? 'justify-end' : 'justify-start'}`}>
 
                 <div className="flex flex-col  max-w-[75%]">
-                    <div className={`px-4 py-2 rounded-xl text-sm ${chat.isUser
+                    <div className={`px-4 py-2 rounded-xl text-xs md:text:sm ${chat.isUser
                         ? 'bg-[var(--orange)] text-white rounded-br-none'
                         : 'bg-[var(--light-gray)] text-black rounded-bl-none'}`}>
                         {
@@ -79,7 +79,7 @@ const ChatBoxComponent = ({ chats, setChats }) => {
     }
     return (
         <div className=" bg-white shadow-[0_3px_10px_rgb(0,0,0,0.3)] rounded-md w-full flex flex-col gap-2">
-            <div className="min-h-[60vh] max-h-[60vh] overflow-y-auto p-5">
+            <div className="min-h-[50vh] max-h-[50vh] md:min-h-[60vh] md:max-h-[50vh] overflow-y-auto p-5 w-full">
                 {chats.map((chat) => (
                     <ChatItem key={chat.id} chat={chat} />
                 ))}
@@ -89,7 +89,7 @@ const ChatBoxComponent = ({ chats, setChats }) => {
             <form onSubmit={(e) => handleSubmit(e)} action="">
                 <div className="flex gap-2 px-5 pb-5 text-sm">
                     <input type="text" value={content} onChange={(e) => setContent(e.target.value)} className="outline-none bg-[var(--light-gray)] rounded-md px-2 w-full " />
-                    <button type="submit" className="cursor-pointer hover:bg-[var(--orange)] hover:text-white transition-all duration-300 px-2 py-1 rounded-md"><IoIosSend size={20} /></button>
+                    <button type="submit" className="cursor-pointer bg-[var(--orange)] text-[var(--light-gray))] hover:text-white transition-all duration-300 px-2 py-1 rounded-md"><IoIosSend size={20} /></button>
                 </div>
             </form>
         </div>

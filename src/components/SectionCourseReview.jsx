@@ -14,10 +14,10 @@ const SectionCourseReview = ({ course }) => {
   return (
     <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-5">
       {/* Header đánh giá */}
-      <div className="flex items-center gap-2 text-[var(--orange)] text-2xl font-semibold mb-2">
+      <div className="flex items-center gap-2 text-[var(--orange)] text-lg md:text-2xl font-semibold mb-2">
         <FaStar />
         <span>{course.rating} / 5</span>
-        <span className="text-lg font-normal">({course.votes} đánh giá)</span>
+        <span className="text-sm md:text-lg font-normal">({course.votes} đánh giá)</span>
       </div>
 
       {/* Danh sách bình luận */}

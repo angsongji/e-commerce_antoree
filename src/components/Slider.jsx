@@ -41,7 +41,7 @@ const HeroSlider = () => {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(intervalRef.current);
   }, []);
@@ -54,22 +54,22 @@ const HeroSlider = () => {
               isActive ? "active" : ""
             } ${background}`}
           >
-            <div className=" shadow-[0_3px_10px_rgb( 70,0,0,0.2)] absolute top-1/6 left-1/10 rounded-md p-8 w-fit h-fit flex flex-col gap-3 justify-start  bg-white ">
-              <div className="text-3xl font-bold  text-left text-[var(--dark-gray)]">
+            <div className=" shadow-[0_3px_10px_rgb( 70,0,0,0.2)] absolute top-3 left-1/2 translate-x-[-50%] md:translate-x-0 md:top-1/6 md:left-1/10 rounded-md p-5 md:p-8 w-[95%] md:w-fit h-fit flex flex-col gap-3 justify-start  bg-white ">
+              <div className="text-xl md:text-3xl font-bold  text-left text-[var(--dark-gray)]">
                 {title}
               </div>
-              <div className="text-left text-[var(--medium-gray)]">{desc}</div>
-              <a href={ctaTo} className=" text-sm border-1 border-[var(--orange)] w-fit tracking-wider px-2 py-1  text-[var(--orange)] rounded-md hover:bg-[var(--orange)] hover:text-white transition-colors duration-500 cursor-pointer">
+              <div className="text-sm md:text-base text-left text-[var(--medium-gray)]">{desc}</div>
+              <a href={ctaTo} className=" text-xs md:text-sm border-1 border-[var(--orange)] w-fit tracking-wider px-2 py-1  text-[var(--orange)] rounded-md hover:bg-[var(--orange)] hover:text-white transition-colors duration-500 cursor-pointer">
                 {cta}
               </a>
             </div>
-            <div className={`absolute bottom-[-1px] left-0 w-full h-auto`}>
+            <div className={`absolute bottom-[-2px] left-0 w-full h-auto`}>
             {shapedivider}
               </div>
             <img
               src={illustration}
               alt="Adventure Map"
-              className="absolute bottom-0 right-10 w-1/3 h-auto "
+              className="absolute bottom-0 right-0 md:right-10  h-1/2 w-auto md:w-1/3 md:h-auto "
             />
           </div>
         );
@@ -77,7 +77,7 @@ const HeroSlider = () => {
 
   return (
     <div
-      className="slider  relative w-full h-full "
+      className="slider relative w-full h-[60vh]"
       onMouseEnter={() => clearInterval(intervalRef.current)}
       onMouseLeave={() => {
         intervalRef.current = setInterval(nextSlide, 5000);
@@ -89,7 +89,7 @@ const HeroSlider = () => {
         ))}
       </div>
 
-      <button className="prev" onClick={prevSlide}>
+      <button className="prev " onClick={prevSlide}>
         &#10094;
       </button>
       <button className="next" onClick={nextSlide}>

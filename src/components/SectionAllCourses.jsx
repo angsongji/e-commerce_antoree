@@ -22,7 +22,7 @@ function SectionAllCourses ({courses, categories,category,  isShorten}) {
             onSelect={setSelectedCategory}
             style="bg-[var(--light-gray)] "
           />
-            <div className=" pt-5 pb-10 grid grid-cols-4 gap-5 px-[var(--padding-x)]">
+            <div className=" pt-5 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4  gap-5 px-[var(--padding-x)]">
             {filterCourses.slice(0, isShorten ? 8 : filterCourses.length).map((course) => (
               <CourseCardVertical2
                 key={course.id}
@@ -33,7 +33,7 @@ function SectionAllCourses ({courses, categories,category,  isShorten}) {
           {
             isShorten && filterCourses.length > 8 && (
               <div className="px-[var(--padding-x)] pb-10">
-                <button onClick={() => navigate(`/all-courses/${selectedCategory}`)} className="cursor-pointer text-sm font-semibold text-[var(--orange)] border border-[var(--orange)] px-4 py-2 rounded-md hover:bg-[var(--orange)] hover:text-white transition ">
+                <button onClick={() => navigate(`/all-courses/${selectedCategory}`)} className="cursor-pointer text-xs md:text-sm font-semibold text-[var(--orange)] border border-[var(--orange)] px-4 py-2 rounded-md hover:bg-[var(--orange)] hover:text-white transition ">
                   Tất cả khoá học chủ đề {categories.find((category) => category.id === selectedCategory).name}
                 </button>
               </div>

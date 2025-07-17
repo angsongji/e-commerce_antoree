@@ -60,10 +60,10 @@ const FilterSidebar = ({courses, setFilterCourses, selectedCategories, setSelect
   };
 
   return (
-    <div className="pl-[var(--padding-x)] text-[var(--medium-gray)] text-sm w-full space-y-6">
+    <div className="pl-[var(--padding-x)] text-[var(--medium-gray)] text-xs md:text-sm w-full space-y-6">
       {/* Chủ đề */}
       <div>
-        <h3 className="font-bold mb-2 text-base text-[var(--dark-gray)]">Chủ đề</h3>
+        <h3 className="font-bold mb-2 text-sm md:text-base text-[var(--dark-gray)]">Chủ đề</h3>
         <ul className="space-y-2">
           {categories.map((category, index) => (
             <li key={index} className="flex items-center gap-2">
@@ -84,7 +84,7 @@ const FilterSidebar = ({courses, setFilterCourses, selectedCategories, setSelect
 
       {/* Mức giá */}
       <div>
-        <h3 className="font-bold mb-2 text-base text-[var(--dark-gray)]">Mức giá</h3>
+        <h3 className="font-bold mb-2 text-sm md:text-base text-[var(--dark-gray)]">Mức giá</h3>
         <ul className="space-y-2">
           {priceRanges.map((priceRange, index) => (
             <li key={index} className="flex items-center gap-2">

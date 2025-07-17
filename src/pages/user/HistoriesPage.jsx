@@ -65,7 +65,7 @@ function HistoriesPage() {
         />
         {
             results.length > 0 ? (
-                <div className="px-[var(--padding-x)] grid grid-cols-6 gap-5">
+                <div className="px-[var(--padding-x)] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-6 gap-5">
                     {results.map((r) => (
                         <div className="relative" key={r.id}>
                             <CourseCardVertical1 key={r.id} course={r} isShorten={true} />

@@ -15,7 +15,7 @@ const SectionWellRated = ({courses, isShorten}) => {
         decsAction={isShorten ? "Xem tất cả" : ""}
         onAction={() => navigate(PATH.WELL_RATED)}  // hoặc dùng Link nếu muốn
       />
-      <div className=" grid grid-cols-4 gap-5 px-[var(--padding-x)] pt-5 pb-10">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 px-[var(--padding-x)] pt-5 pb-10">
         {courses.slice(0, isShorten ? 4 : courses.length).map((course) => (
           <CourseCardVertical1
             key={course.id}
