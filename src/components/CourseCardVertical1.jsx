@@ -52,10 +52,22 @@ const CourseCardVertical1 = ({ course, isShorten }) => {
                                 setSearchParams({ courseId: course.id });
                                 addToHistory(course.id);
                             }}
-                            className="cursor-pointer text-white text-lg flex items-center justify-center bg-[var(--light-gray)]/30  absolute top-0 w-full h-full">
+                            className="hidden md:flex cursor-pointer text-white text-lg  items-center justify-center bg-[var(--light-gray)]/30  absolute top-0 w-full h-full">
                             <button
                                 className=" my-4 px-4 py-2  cursor-pointer
                              text-sm rounded-md tracking-wider border-white border">Xem chi tiết</button>
+                        </div>
+
+                    )
+                }
+                {
+                    isShorten && (
+                        <div
+                            onClick={() => {
+                                setSearchParams({ courseId: course.id });
+                                addToHistory(course.id);
+                            }}
+                            className=" md:hidden cursor-pointer text-white text-lg flex items-center justify-center  absolute top-0 w-full h-full">
                         </div>
 
                     )

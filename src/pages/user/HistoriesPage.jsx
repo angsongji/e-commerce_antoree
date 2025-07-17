@@ -18,7 +18,6 @@ function HistoriesPage() {
                 const filteredCourses = histories
                 .map(id => response.data.find(course => course.id === id))
                 .filter(Boolean);
-                console.log(filteredCourses);
                 setResults(filteredCourses);
             } catch (error) {
                 console.error("Error fetching courses:", error);
