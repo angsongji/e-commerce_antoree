@@ -18,7 +18,6 @@ const SectionForYou = ({ courses, isShorten }) => {
                 const response = await fetchCourses();
                 const filteredCourses = cart
                     .map(id => response.data.find(course => course.id === id))
-                    .filter(Boolean);
                     handleFilterCourses(filteredCourses);
             } catch (error) {
                 console.error("Error fetching courses:", error);

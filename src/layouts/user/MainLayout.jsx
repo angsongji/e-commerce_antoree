@@ -25,7 +25,6 @@ function MainLayout() {
   }, []);
   useEffect(() => {
     const courseId = searchParams.get("courseId");
-    console.log(courseId);
     setSelectedCourse(courses.find(course => course.id === Number(courseId)));
   }, [searchParams]);
   return (

@@ -23,7 +23,6 @@ function FavoritesPage() {
         const filteredCourses = favorites
           .map(id => response.data.find(course => course.id === id))
           .filter(Boolean);
-        console.log(filteredCourses);
         setResults(filteredCourses);
       } catch (error) {
         console.error("Error fetching courses:", error);
