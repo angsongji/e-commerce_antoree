@@ -13,7 +13,12 @@ const CourseCardVertical1 = ({ course, isShorten }) => {
             <img src={course?.image} alt={course?.title} className="w-full h-35 md:h-40 object-cover mb-4" />
 
             <div className="">
-                <h2 className="text-base md:text-lg font-bold line-clamp-1">{course?.title}</h2>
+                <h2 onClick={() => {
+                    setSearchParams({ courseId: course.id });
+                    addToHistory(course.id);
+                }} className="block md:hidden text-base md:text-lg font-bold line-clamp-1">{course?.title}</h2>
+
+                <h2 className="hidden md:block text-base md:text-lg font-bold line-clamp-1">{course?.title}</h2>
 
                 <div className="text-[var(--orange)] font-bold my-1 md:text-base text-sm">
                     {course?.price.toLocaleString()} đ
@@ -56,18 +61,6 @@ const CourseCardVertical1 = ({ course, isShorten }) => {
                             <button
                                 className=" my-4 px-4 py-2  cursor-pointer
                              text-sm rounded-md tracking-wider border-white border">Xem chi tiết</button>
-                        </div>
-
-                    )
-                }
-                {
-                    isShorten && (
-                        <div
-                            onClick={() => {
-                                setSearchParams({ courseId: course.id });
-                                addToHistory(course.id);
-                            }}
-                            className=" md:hidden cursor-pointer text-white text-lg flex items-center justify-center  absolute top-0 w-full h-full">
                         </div>
 
                     )
