@@ -67,15 +67,18 @@ function CartPage() {
     }
     const CartSummaryCard = ({ onCheckout }) => {
         return (
-          <div className="sticky top-0 z-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-md p-5 bg-white  h-fit">
-            <p className="text-sm text-[var(--medium-gray)] font-semibold mb-2">Tổng cộng:</p>
-            <p className="text-3xl font-bold text-[var(--dark-gray)] mb-5">
+          <div className=" block md:sticky top-0 z-10 md:shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:rounded-md py-2 md:p-5 bg-white  h-fit w-full border-t border-[var(--medium-gray)] md:border-0">
+            <div className='flex md:block gap-1 justify-between items-center'>
+            <p className="text-sm text-[var(--medium-gray)] font-semibold md:mb-2">Tổng cộng:</p>
+            <p className="text-xl md:text-3xl font-bold text-[var(--dark-gray)]  md:mb-5">
               {total.toLocaleString("vi-VN")} đ
             </p>
+            </div>
+            
       
             <button
               onClick={onCheckout}
-              className="w-full px-4 py-3 rounded-md text-white  mt-5
+              className="md:text-base text-xs w-full py-1 py-2 md:px-4 md:py-3 rounded-md text-white  mt-3 md:mt-5
                          bg-gradient-to-r from-[#D19988] to-[var(--orange)] hover:opacity-90 
                          transition-all duration-300 cursor-pointer  tracking-wider"
             >
@@ -101,18 +104,25 @@ function CartPage() {
 
         {
             results.length > 0 && (
-                <div className="grid grid-cols-[70%_30%] px-[var(--padding-x)] relative">
-                    <div className=" grid gap-5  pr-10">
+                <div className="grid md:grid-cols-[70%_30%] px-[var(--padding-x)] relative ">
+                    <div className='block md:hidden'>
+                    <CartSummaryCard total={total} onCheckout={() => message.info("Chưa có tính năng này!", 2)} />
+                        </div>
+                        <div className='block md:hidden my-5 text-xs text-[var(--medium-gray)]'>Danh sách sản phẩm</div>
+                    <div className=" grid gap-5 pr-0 md:pr-10">
                         {results.map((r) => (
                             <div key={r.id} className="relative h-fit" >
                                 <CourseCartCard course={r} />
-                                <button onClick={() => removeFromCartAction(r.id)} className="cursor-pointer absolute bottom-2 right-2 text-[var(--medium-gray)] hover:text-[var(--dark-gray)] transition">
+                                <button onClick={() => removeFromCartAction(r.id)} className="cursor-pointer absolute bottom-0 right-0 text-[var(--medium-gray)] hover:text-[var(--dark-gray)] transition">
                                     <RiDeleteBin2Fill className="text-2xl"/>
                                 </button>
                             </div>
                         ))}
                     </div>
+                    <div className='hidden md:block'>
                     <CartSummaryCard total={total} onCheckout={() => message.info("Chưa có tính năng này!", 2)} />
+                        </div>
+                    
                 </div>
             )
         }

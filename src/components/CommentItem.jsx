@@ -13,20 +13,21 @@ function CommentItem({ comment }) {
       }
       
     return (
-        <div className="text-[var(--medium-gray)] border-t border-[var(--medium-gray)]/50 py-5">
+        <div className="text-[var(--medium-gray)] border-t border-[var(--medium-gray)]/50 py-4 md:py-5">
             {/* Người dùng */}
-            <div className="flex justify-between items-start gap-4 mb-2 ">
-                <div className="flex items-center gap-3">
+            <div className="grid md:flex justify-between items-start gap-2 md:gap-4 mb-2 ">
+            <span className="text-xs md:text-sm block md:hidden">{formatDateTimeBySlice(comment.date)}</span>
+                <div className="flex items-center gap-1 md:gap-3">
                     <span className="bg-[var(--light-gray)] rounded-full"><img src={comment.user.avatar} className="w-10 h-10 rounded-full object-cover" /></span>
-                    <div className="">
-                        <p className="font-semibold text-[var(--dark-gray)]">{comment.user.name}</p>
+                    <div className="flex md:block justify-between gap-5">
+                        <p className="text-sm md:text-base font-semibold text-[var(--dark-gray)]">{comment.user.name}</p>
                         <p className="text-sm text-[var(--orange)] flex gap-1 items-center"><FaStar /> {comment.rating}</p>
                     </div>
                 </div>
-                <span className="text-sm ">{formatDateTimeBySlice(comment.date)}</span>
+                <span className="text-xs md:text-sm hidden md:block">{formatDateTimeBySlice(comment.date)}</span>
             </div>
             
-            <p className="text-sm leading-relaxed text-[var(--dark-gray)]">
+            <p className="text-xs md:text-sm leading-relaxed text-[var(--dark-gray)]">
                 {expanded ? comment.content : `${comment.content.slice(0, 300)}`}
             </p>
 
@@ -46,7 +47,7 @@ function CommentItem({ comment }) {
                     <AiOutlineLike className="text-base" />
                 </div>
 
-                <button className="text-xl cursor-pointer">
+                <button className="text-base md:text-xl cursor-pointer">
                     <HiDotsVertical />
                 </button>
             </div>

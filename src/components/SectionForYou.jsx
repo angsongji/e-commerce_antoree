@@ -51,7 +51,7 @@ const SectionForYou = ({ courses, isShorten }) => {
                 decsAction={isShorten && filterCourses.length > 4 ? "Xem tất cả" : ""}
                 onAction={() => navigate(PATH.FOR_YOU)}  // hoặc dùng Link nếu muốn
             />
-            <div className=" grid grid-cols-4 gap-5 px-[var(--padding-x)] pt-5 pb-10">
+            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4  gap-5 px-[var(--padding-x)] pt-5 pb-10">
                 {filterCourses.slice(0, isShorten ? 4 : filterCourses.length).map((course) => (
                     <CourseCardVertical1
                         key={course.id}

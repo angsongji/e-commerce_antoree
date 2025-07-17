@@ -7,9 +7,10 @@
   --medium-gray: #8a7d78;
   --dark-gray: #282220;
   --padding-x: 3rem;
-  --font-size: 1rem;
 }
-
+ *{
+  /* outline: 0.5px dashed red; */
+ }
 
 html{
   scroll-behavior: smooth;
@@ -148,3 +149,9 @@ body {
     transform: rotate(360deg);
   }
 } 
+
+@media (max-width: 768px) {
+  :root {
+    --padding-x: 1rem;
+  }
+}

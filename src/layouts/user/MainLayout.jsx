@@ -29,12 +29,12 @@ function MainLayout() {
     setSelectedCourse(courses.find(course => course.id === Number(courseId)));
   }, [searchParams]);
   return (
-    <div className="w-full min-w-0 relative">
+    <div className="w-full relative">
       <Header />
       <div>
         <Outlet />
       </div>
-      <div className="bg-white px-[var(--padding-x)] text-[var(--medium-gray)] py-20">
+      <div className="bg-white px-[var(--padding-x)] text-[var(--medium-gray)] py-15 md:py-20">
         <hr />
       </div>
       <Footer />
@@ -42,7 +42,7 @@ function MainLayout() {
       {showScrollBtn && (
         <button
           onClick={scrollToTop}
-          className="text-sm flex gap-1 items-center z-20 fixed bottom-20 right-6 bg-white text-[var(--orange)] p-5 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-105 transition cursor-pointer"
+          className="z-20 fixed bottom-20 right-6 bg-white text-[var(--orange)] p-3 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 transition cursor-pointer"
         >
           <FaArrowUp />
         </button>
