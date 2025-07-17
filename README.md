@@ -19,6 +19,7 @@ cd Antoree
 npm install
 # hoặc
 # yarn install
+```bash
 
 ### 3. Chạy dự án ở chế độ development
 ```bash
